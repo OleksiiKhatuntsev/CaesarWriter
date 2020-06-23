@@ -20,7 +20,7 @@ class CaesarCipher():
     def __init__(self):
         self.LOW_LETTERS = [letter for letter in range(ord('a'), ord('z') + 1)]
         self.BIG_LETTERS = [letter for letter in range(ord('A'), ord('Z') + 1)]
-        self.SPECIAL_SYMBOLS = ['\n', '\a', '\b', '\f', '\r', '\t']
+        self.SPECIAL_SYMBOLS = ['\n', '\a', '\b', '\f', '\r', '\t', ' ']
 
     def get_ciphered_text(self, text = "", shift_value = 0):
         """
@@ -38,4 +38,3 @@ class CaesarCipher():
             elif letter.islower():
                 result_text += chr(get_ciphered_letter(self.LOW_LETTERS, letter, shift_value))
         return result_text
-    get_ciphered_letter()
