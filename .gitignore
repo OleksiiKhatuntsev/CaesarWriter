@@ -1,2 +1,4 @@
 /venv/
 /.idea/
+/work_with_files/__pycache__/
+/caesar_cipher/__pycache__/
