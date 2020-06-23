@@ -21,7 +21,3 @@ class CaesarCipher():
             elif letter.islower():
                 result_text += chr(get_ciphered_letter(self.LOW_LETTERS, letter, shift_value))
         return result_text
-
-
-caesar_test = CaesarCipher()
-print(caesar_test.get_ciphered_text("zac", 1))

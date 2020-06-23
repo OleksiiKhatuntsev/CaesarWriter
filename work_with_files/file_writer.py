@@ -2,7 +2,7 @@ import pdfkit
 
 class FileWriter():
 
-    def __init__(self, content, path="../default_file.pdf"):
+    def __init__(self, content, path="default_file.pdf"):
         self.path = path
         self.content = content
 
